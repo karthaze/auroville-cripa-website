@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRIPA — The Auroville Theatre Group</title>
+  <meta name="description" content="CRIPA — Centre for Research in the Performing Arts. 30 years of transformative theatre in Auroville, India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Yeseva+One&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="nav">
+    <div class="nav__inner">
+      <a href="#/" class="nav__logo" id="nav-logo">
+        <img src="/images/logo.png" alt="CRIPA" class="nav__logo-img" />
+        <span class="nav__logo-text">CRIPA</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#/" class="nav__link" data-page="home">Home</a></li>
+        <li><a href="#/about" class="nav__link" data-page="about">About</a></li>
+        <li><a href="#/productions" class="nav__link" data-page="productions">Productions</a></li>
+        <li><a href="#/philosophy" class="nav__link" data-page="philosophy">Philosophy</a></li>
+        <li><a href="#/director" class="nav__link" data-page="director">The Director</a></li>
+        <li><a href="#/gallery" class="nav__link" data-page="gallery">Gallery</a></li>
+        <li><a href="#/contact" class="nav__link" data-page="contact">Contact</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#/" class="mobile-menu__link">Home</a></li>
+      <li><a href="#/about" class="mobile-menu__link">About</a></li>
+      <li><a href="#/productions" class="mobile-menu__link">Productions</a></li>
+      <li><a href="#/philosophy" class="mobile-menu__link">Philosophy</a></li>
+      <li><a href="#/director" class="mobile-menu__link">The Director</a></li>
+      <li><a href="#/gallery" class="mobile-menu__link">Gallery</a></li>
+      <li><a href="#/contact" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <main id="app" class="main"></main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <img src="/images/logo.png" alt="CRIPA" class="footer__logo" />
+        <p class="footer__name">CRIPA</p>
+        <p class="footer__sub">Centre for Research in the Performing Arts</p>
+        <p class="footer__addr">Kalabhumi, Auroville<br/>Tamil Nadu 605101, India</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigate</h4>
+        <a href="#/">Home</a>
+        <a href="#/about">About</a>
+        <a href="#/productions">Productions</a>
+        <a href="#/philosophy">Philosophy</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#/director">The Director</a>
+        <a href="#/gallery">Gallery</a>
+        <a href="#/contact">Contact</a>
+        <a href="https://auroville.org" target="_blank" rel="noopener">Auroville.org</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:theatre@auroville.org.in">theatre@auroville.org.in</a>
+        <p class="footer__saiier">A project of SAIIER — Sri Aurobindo International Institute of Educational Research</p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 The Auroville Theatre Group</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightbox-close">&times;</button>
+    <img src="" alt="" class="lightbox__img" id="lightbox-img" />
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
