@@ -1,15 +1,35 @@
+import { useState, useEffect } from 'react';
 import { SectionHeader } from '../../components/SectionHeader/SectionHeader';
 import { Button } from '../../components/Button/Button';
 import { featuredProductions } from '../../data/productions';
 import './HomePage.css';
 
+const heroImages = [
+
+  '/images/hero-bg-2.jpg',
+
+];
+
 export function HomePage() {
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="page">
       {/* ═══ HERO ═══ */}
       <section className="hero">
         <div className="hero__bg">
-          <img src="/images/hero-bg.png" alt="" />
+          <img
+            src="/images/hero-bg-2.jpg"
+            alt=""
+            className={'hero__bg-img active'}
+          />
         </div>
         <div className="hero__overlay" />
         <div className="hero__inner">
