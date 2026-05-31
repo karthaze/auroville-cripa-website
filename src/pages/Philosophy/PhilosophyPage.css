@@ -1,0 +1,95 @@
+/* ═══ PHILOSOPHY — full-bleed bg ═══ */
+.phil-page {
+  background: var(--black);
+}
+
+.phil-section {
+  position: relative;
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.phil__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.phil__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.phil__bg-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 23, 21, 0.88) 0%,
+    rgba(26, 23, 21, 0.75) 100%
+  );
+}
+
+.phil__inner {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 0;
+}
+
+.phil__inner .section-label {
+  color: var(--gold);
+}
+
+.phil__inner .section-title {
+  color: var(--floral);
+}
+
+.phil__inner .divider {
+  background: var(--gold);
+}
+
+.phil__quote {
+  max-width: 750px;
+}
+
+.phil__quote blockquote p {
+  font-family: var(--font-head);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.7;
+  color: rgba(255, 250, 240, 0.85);
+  margin-bottom: 1.3rem;
+}
+
+.phil__quote blockquote em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.phil__cite {
+  font-size: 0.8rem;
+  color: rgba(255, 250, 240, 0.45);
+  margin-top: 1rem;
+  display: block;
+  font-style: normal;
+}
+
+.phil__extended {
+  margin-top: 3rem;
+  max-width: 700px;
+}
+
+.phil__extended p {
+  font-size: 0.9rem;
+  color: rgba(255, 250, 240, 0.6);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .phil__inner {
+    padding: 4rem 0;
+  }
+}

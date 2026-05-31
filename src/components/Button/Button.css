@@ -1,0 +1,65 @@
+/* ═══ BUTTON VARIANTS ═══ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn--red {
+  background: var(--red);
+  color: #fff;
+}
+.btn--red:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(224, 63, 79, 0.3);
+  color: #fff;
+}
+
+.btn--olive {
+  background: var(--olive);
+  color: #fff;
+}
+.btn--olive:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(129, 145, 47, 0.3);
+  color: #fff;
+}
+
+.btn--gold {
+  background: var(--gold);
+  color: var(--black);
+}
+.btn--gold:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(248, 196, 99, 0.3);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1.5px solid rgba(255, 250, 240, 0.4);
+  color: var(--floral);
+}
+.btn--outline:hover {
+  background: rgba(255, 250, 240, 0.1);
+  color: var(--floral);
+}
+
+.btn--outline-dark {
+  background: transparent;
+  border: 1.5px solid var(--olive);
+  color: var(--olive);
+}
+.btn--outline-dark:hover {
+  background: var(--olive);
+  color: #fff;
+}

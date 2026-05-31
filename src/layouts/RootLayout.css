@@ -1,0 +1,5 @@
+/* ═══ MAIN LAYOUT ═══ */
+.main {
+  min-height: calc(100vh - var(--nav-h));
+  padding-top: var(--nav-h);
+}

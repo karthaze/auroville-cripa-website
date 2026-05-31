@@ -1,0 +1,16 @@
+/* ═══ SECTION HEADER ═══ */
+.section-header {
+  margin-bottom: 0.5rem;
+}
+
+.section-label--light {
+  color: rgba(255, 250, 240, 0.5);
+}
+
+.section-title--light {
+  color: var(--floral);
+}
+
+.divider--gold {
+  background: var(--gold);
+}

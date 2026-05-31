@@ -1,0 +1,104 @@
+/* ═══ RESET ═══ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ═══ CSS VARIABLES ═══ */
+:root {
+  --floral: #fffaf0;
+  --red: #e03f4f;
+  --olive: #81912f;
+  --gold: #f8c463;
+  --black: #1a1715;
+  --text: #2d2a26;
+  --text-light: #5a554e;
+  --text-muted: #8a847c;
+
+  --font-hero: 'Cinzel', serif;
+  --font-head: 'Yeseva One', serif;
+  --font-body: 'Josefin Sans', sans-serif;
+
+  --nav-h: 64px;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+  --max-w: 1100px;
+}
+
+/* ═══ BASE ═══ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--floral);
+  color: var(--text);
+  line-height: 1.75;
+  overflow-x: hidden;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--red);
+  color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--olive);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+a:hover {
+  color: var(--red);
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ═══ SHARED UTILITIES ═══ */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 5.5rem 0;
+}
+
+.section-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--olive);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background: var(--red);
+  margin-bottom: 2rem;
+}

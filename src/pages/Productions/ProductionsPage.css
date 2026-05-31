@@ -1,0 +1,119 @@
+/* ═══ PRODUCTIONS ═══ */
+.prod-intro {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  max-width: 550px;
+  margin-bottom: 2.5rem;
+  line-height: 1.75;
+}
+
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.prod-card {
+  background: var(--floral);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.prod-card:hover {
+  transform: translateY(-2px);
+}
+
+.prod-card__img {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.prod-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.prod-card:hover .prod-card__img img {
+  transform: scale(1.03);
+}
+
+.prod-card__body {
+  padding: 1rem 1.3rem 1.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: none;
+}
+
+.prod-card__year {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.prod-card__title {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  margin: 0.2rem 0;
+  color: var(--text);
+}
+
+.prod-card__author {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.prod-card__desc {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-top: 0.6rem;
+  line-height: 1.7;
+}
+
+/* ═══ COMPLETE WORKS LIST ═══ */
+.prod-list {
+  padding: 2rem;
+  background: var(--floral);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.prod-list h3 {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.prod-list ul {
+  list-style: none;
+  columns: 2;
+  gap: 2rem;
+}
+
+.prod-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.prod-list__year {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .prod-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prod-list ul {
+    columns: 1;
+  }
+}
